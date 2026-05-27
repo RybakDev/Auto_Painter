@@ -1,0 +1,11 @@
+[project]
+name = "austrian-painter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pillow>=12.2.0",
+    "pyautogui>=0.9.54",
+    "pydirectinput>=1.0.4",
+]
