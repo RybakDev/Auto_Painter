@@ -17,15 +17,15 @@ SUPPORTED_IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp", ".bmp"}
 
 # Normal screen pixels. Use the visible drawable canvas edge, or set
 # CANVAS_BORDER_INSET_NORMAL_PIXELS below if these include the border.
-CANVAS_TOP_LEFT = (606, 93)
-CANVAS_BOTTOM_RIGHT = (1312, 798)
+CANVAS_TOP_LEFT = (606, 92)
+CANVAS_BOTTOM_RIGHT = (1312, 799)
 
 # In-game drawable pixel resolution: (width, height).
-CANVAS_RESOLUTION = (500,500)
+CANVAS_RESOLUTION = (200,200)
 
 # Optional safety inset in normal screen pixels. Useful if your chosen canvas
 # points sit on the frame/border instead of the first drawable pixel edge.
-CANVAS_BORDER_INSET_NORMAL_PIXELS = 1
+CANVAS_BORDER_INSET_NORMAL_PIXELS = 0
 
 # Keep this at 1 to paint every game pixel. Increase to 2, 3, etc. for faster
 # rough previews.
@@ -35,7 +35,7 @@ DRAW_STEP = 1
 # bottom, starting at 1. For example, 4 lanes means:
 # lane 1 = top quarter, lane 4 = bottom quarter.
 PAINT_ONLY_SELECTED_LANE = True
-HORIZONTAL_LANE_COUNT = 10
+HORIZONTAL_LANE_COUNT = 5
 HORIZONTAL_LANE_NUMBER = 1
 
 # Set this to None for exact image colors. Lower numbers reduce brush color
@@ -46,7 +46,7 @@ MAX_COLORS = 50
 # light colors should also be skipped; set SKIP_WHITE_PIXELS to False to paint
 # every color.
 SKIP_WHITE_PIXELS = True
-WHITE_SKIP_MIN_CHANNEL_VALUE = 250
+WHITE_SKIP_MIN_CHANNEL_VALUE = 225
 
 # Passed to click_at for every painted pixel.
 CLICK_DELAY_SECONDS = 0.0001
